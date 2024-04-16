@@ -1,3 +1,4 @@
+/* Base styles */
 .main-container {
   display: flex;
   flex-direction: column;
@@ -6,4 +7,27 @@
 
 .content {
   flex: 1;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  /* Styles for screens smaller than 768px (typically tablets and mobile devices) */
+
+  .header, .footer, .content {
+    padding: 0.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Styles for very small devices like mobile phones */
+
+  /* Further adjustments as necessary */
+  .header, .footer, .content {
+    padding: 0.25rem;
+  }
+
+  /* Adjust font sizes if needed */
+  h1, h2, h3, p {
+    font-size: smaller;
+  }
 }

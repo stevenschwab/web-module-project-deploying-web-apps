@@ -1,4 +1,19 @@
-.Header {
+/* Header.css */
+
+.hamburger {
+    display: none; /* Hidden by default */
+    font-size: 24px; /* Hamburger icon size */
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.nav-visible {
+    display: block;
+}
+
+.header {
+    position: relative;
     background-color: #8B4513;
     color: white;
     display: flex;
@@ -15,4 +30,46 @@
     color: white;
     padding: 14px 20px;
     text-decoration: none;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    /* Styles for screens smaller than 768px (typically tablets and mobile devices) */
+
+    .hamburger {
+        display: flex; /* Show the hamburger menu */
+        justify-content: end;
+    }
+
+    nav {
+        position: absolute;
+        right: 0;
+        top: 100%; /* Position the menu below the header */
+        background-color: #f8f8f8;
+        border: 1px solid #ddd;
+        width: 100%; /* Full width */
+        z-index: 1000;
+        display: none; /* Hidden by default */
+    }
+
+    .nav-visible {
+        display: block; /* Show the navigation menu when the hamburger is clicked */
+    }
+
+    /* Navigation links here */
+    .nav-link {
+        display: block;
+        padding: 1rem;
+        color: black;
+        border-bottom: 1px solid #ddd; /* Add a separator between links */
+    }
+}
+
+@media (max-width: 480px) {
+    /* Styles for very small devices like mobile phones */
+  
+    /* Adjust font sizes if needed */
+    h1, h2, h3, p {
+      font-size: smaller;
+    }
 }

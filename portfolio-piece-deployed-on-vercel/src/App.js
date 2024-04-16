@@ -12,7 +12,7 @@ import './App.css';
 export default function App() {
   return (
     <div className="main-container">
-      <Header />
+      <Header className="header"/>
       <div className="content">
         <Routes>
           <Route path="/contact" element={<ContactForm />} />
@@ -22,7 +22,7 @@ export default function App() {
           <Route path="/" exact element={<Home />} />
         </Routes>
       </div>
-      <Footer />
+      <Footer className="footer"/>
     </div>
   );
 }

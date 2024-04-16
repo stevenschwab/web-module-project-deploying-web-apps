@@ -26,4 +26,13 @@
     font-style: italic;
     color: #555;
     margin-top: 1rem;
-}  
+}
+
+@media (max-width: 480px) {
+    /* Styles for very small devices like mobile phones */
+  
+    /* Adjust font sizes if needed */
+    h1, h2, h3, p {
+      font-size: smaller;
+    }
+}

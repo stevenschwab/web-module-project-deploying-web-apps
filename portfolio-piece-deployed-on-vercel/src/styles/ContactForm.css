@@ -43,3 +43,14 @@
 .contact-form button:hover {
     background-color: #0056b3;
 }
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    /* Styles for screens smaller than 768px (typically tablets and mobile devices) */
+  
+    /* Adjust form input sizes and button sizes for mobile */
+    input, textarea, button {
+      width: 100%; /* Full width inputs and buttons */
+      box-sizing: border-box; /* Include padding and borders in the element's total width and height */
+    }
+}
