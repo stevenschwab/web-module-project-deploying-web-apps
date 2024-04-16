@@ -8,8 +8,8 @@ function Header() {
       <h1 className="logo">Doug's Adirondack Chairs</h1>
       <nav>
         <Link to="/" className="nav-link">Home</Link>
-        <Link to="/about" className="nav-link">About Us</Link>
-        <Link to="/craftsmanship" className="nav-link">Our Craftsmanship</Link>
+        <Link to="/about-us" className="nav-link">About Us</Link>
+        <Link to="/our-craftsmanship" className="nav-link">Our Craftsmanship</Link>
         <Link to="/reviews" className="nav-link">Reviews</Link>
         <Link to="/contact" className="nav-link">Contact</Link>
       </nav>
