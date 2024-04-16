@@ -1,0 +1,29 @@
+.banner {
+    position: relative;
+    background-image: url('../../public/images/banner.jpg');
+    width: 100%;
+    height: 400px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.banner-text {
+    position: absolute;
+    top: 30%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    font-weight: bolder;
+    max-width: 600px;
+}
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
